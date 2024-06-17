@@ -1,8 +1,8 @@
 {
     "openapi": "3.0.2",
     "info": {
-        "title": "API定義書",
-        "description": "express-openapiを試すための定義書",
+        "title": "sample api",
+        "description": "for express-openapi sample",
         "version": "0.1.0"
     },
     "servers": [
