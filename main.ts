@@ -17,9 +17,6 @@ initialize({
     validateApiDoc: true,
     operations: {
         getSample: [
-            function (req: Request, res: Response, next: NextFunction) {
-                next();
-            },
             function (req: Request, res: Response) {
                 res.send({
                     name: "sample!!!!!!!!!!!!!!"
