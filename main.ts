@@ -13,7 +13,7 @@ app.listen(port, () => {
 
 initialize({
     app: app,
-    apiDoc: path.resolve(__dirname, "openapi.json"),
+    apiDoc: path.resolve(__dirname, "openapi.yaml"),
     validateApiDoc: true,
     operations: {
         getSample: [
