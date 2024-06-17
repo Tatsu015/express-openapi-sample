@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "API定義書",
+        "description": "express-openapiを試すための定義書",
+        "version": "0.1.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000"
+        }
+    ],
+    "paths": {
+        "/sample": {
+            "get": {
+                "summary": "sample API endpoint",
+                "description": "get sample API",
+                "operationId": "getSample",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "required": [
+                                        "name"
+                                    ],
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
