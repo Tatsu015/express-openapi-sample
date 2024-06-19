@@ -9,16 +9,19 @@ paths:
       summary: sample API endpoint
       description: get sample API
       operationId: getSample
-      parameters: []
       responses:
         '200':
           description: success
           content:
             application/json:
               schema:
-                type: object
-                required:
-                  - name
-                properties:
-                  name:
-                    type: string
+                $ref: '#/components/schemas/Sample'
+components:
+  schemas:
+    Sample:
+      type: object
+      properties:
+        name:
+          type: string
+      required:
+        - name
